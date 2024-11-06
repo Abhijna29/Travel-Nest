@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Travel Nest</title>
+  </head>
+  <body>
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel <span>N</span>est</a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About us</a>
+        <a href="#book">Book</a>
+        <a href="#destination">Destination</a>
+        <a href="#blog">Blog</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fa-solid fa-search" id="search-btn"></i>
+        <i class="fa-solid fa-user" id="login"></i>
+        <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search here" />
+        <label for="search-bar" class="fa-solid fa-search"></label>
+      </form>
+    </header>
+
+    <!-- login form -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form method="post" class="form">
+        <h3>login</h3>
+        <label>Enter your email:</label>
+        <input type="email" class="box"  name="email"/>
+        <label>Enter your password</label>
+        <input type="password" class="box" name="password"/>
+        <input type="submit" value="login now" class="btn" id="login-btn" />
+      </form>
+    </div>
+    
+    <!-- home section -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>explore dream discover!</h3>
+        <p>
+          Join us as we explore the world together, one adventure at a time!
+        </p>
+        <a href="#" class="btn"> discover more</a>
+      </div>
+
+      <div class="image-container">
+        <img id="image" src="images/p19.jpg" />
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h2 class="section-header">about us</h2>
+          <p>
+            At <span>travel nest</span>, we believe that travel is about
+            creating unforgettable memories. Our mission is to inspire your
+            adventures around the globe.
+          </p>
+
+          <p>
+            Whether you're planning a romantic getaway, a family vacation, or an
+            adventurous expedition, we are here to guide you every step of the
+            way. Our extensive knowledge of destinations, combined with our
+            commitment to customer satisfaction, ensures that your travel
+            experience will be seamless and enjoyable.
+          </p>
+
+          <p>
+            travel is not just about reaching a destination; it's about the
+            experiences, the stories, and the connections made along the way.
+          </p>
+
+          <p>
+            ~Join us as we explore the world together, one adventure at a time!
+          </p>
+
+          <button class="btn">
+            read more<i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="about-image">
+          <img src="images/about.jpg" alt="about" />
+        </div>
+      </div>
+    </section>
+
+<!-- Book section -->
+ <section class="book" id="book">
+  <div class="book-container">
+    <h2 class="heading">
+      <span>B</span>
+      <span>O</span>
+      <span>O</span>
+      <span>K</span>
+      <span class="space"></span>
+      <span>N</span>
+      <span>O</span>
+      <span>W</span>
+    </h2>
+    <div class="book-content">
+      <div class="book-img">
+      <img src="images/book.jpg" >
+    
+      </div>
+    <form action="">
+      <h2>Choose your destination</h2>
+      <input type="text" class="box" placeholder="search places">
+      <h2>How many?</h2>
+      <input type="text" class="box" placeholder="number of guests">
+      <h2>Arrivals</h2>
+      <input type="date" class="box" placeholder="dd/mm/yyyy">
+      <h2>Departure</h2>
+      <input type="date" class="box" placeholder="dd/mm/yyyy">
+    </form>
+  </div>
+  <div class="book-btn">
+    <button class="btn">
+    <p>book now!</p>
+    </button>
+  </div>
+ </section>
+
+    <!-- static counters -->
+    <section id="static-counter">
+      <div class="container">
+        <div class="static-wrapper">
+          <div class="static-icons">
+            <i class="fa fa-plane-departure"></i>
+            <p class="number" data="600">600</p>
+            <p class="txt">bookings</p>
+          </div>
+          <div class="static-icons">
+            <i class="fa fa-home"></i>
+            <p class="number" data="275">275</p>
+            <p class="txt">amazing tour</p>
+          </div>
+          <div class="static-icons">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p class="number" data="150">150</p>
+            <p class="txt">completed trips</p>
+          </div>
+          <div class="static-icons">
+            <i class="fa-solid fa-location"></i>
+            <p class="number" data="145">145</p>
+            <p class="txt">destinations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- destination section -->
+    <section class="destination" id="destination">
+      <div class="travel-container">
+        <p class="section-header">MOST POPULAR</p>
+        <h2 class="head">TRAVEL <span> DESTINATION</span></h2>
+
+        <!-- Italy -->
+        <div class="travel-countries">
+          <div class="countries-content">
+            <h2 class="sub-heading">FRANCE, EUROPE</h2>
+            <p>
+              France, officially known as the French Republic, is a country
+              located primarily in Western Europe, celebrated for its rich
+              history, diverse culture, and stunning landscapes. From the iconic
+              Eiffel Tower in Paris to the picturesque vineyards of Bordeaux,
+              France offers a unique blend of art, gastronomy, and natural
+              beauty that captivates millions of visitors each year.
+            </p>
+            <ul>
+              <div class="country-names">
+                <li><i class="fa fa-location-dot"> </i> Paris</li>
+                <li><i class="fa fa-location-dot"> </i> Marseille</li>
+                <li><i class="fa fa-location-dot"> </i> Bordeauxle</li>
+              </div>
+              <div class="country-names">
+                <li><i class="fa fa-location-dot"> </i> Toulouse</li>
+                <li><i class="fa fa-location-dot"> </i> Lille</li>
+                <li><i class="fa fa-location-dot"></i> Lyon</li>
+              </div>
+            </ul>
+          </div>
+          <div class="travel-img">
+            <img src="images/paris.jpg" />
+            <div class="img-content">
+              <h2><i class="fa fa-location-dot"></i> Paris</h2>
+            </div>
+            <!-- <div class="price-label"><p>$1.300</p></div> -->
+          </div>
+        </div>
+
+        <!-- India -->
+        <div class="india-content">
+          <div class="travel-img">
+            <img src="images/tajmahal.jpg" />
+            <div class="img-content">
+              <h2><i class="fa fa-location-dot"></i> Uttar Pradesh</h2>
+            </div>
+            <!-- <div class="price-label"><p>$1.300</p></div> -->
+          </div>
+          <div class="countries-content">
+            <h2 class="sub-heading">INDIA, ASIA</h2>
+            <p>
+              India, a vibrant tapestry of cultures and traditions, beckons
+              travelers with its rich history, breathtaking landscapes, and
+              diverse culinary experiences. From the majestic palaces of
+              Rajasthan to the serene backwaters of Kerala, this enchanting
+              country offers an unforgettable journey for every adventurer.
+            </p>
+            <ul>
+              <div class="country-names">
+                <li><i class="fa fa-location-dot"> </i> Delhi</li>
+                <li><i class="fa fa-location-dot"> </i> Jaipur</li>
+                <li><i class="fa fa-location-dot"> </i> Ladakh</li>
+              </div>
+              <div class="country-names">
+                <li><i class="fa fa-location-dot"> </i> Uttar Pradesh</li>
+                <li><i class="fa fa-location-dot"> </i> Goa</li>
+                <li><i class="fa fa-location-dot"></i> Kerala</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <button  class="btn">
+          more tours<i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <hr class="dashed">
+
+    <!-- travel blog -->
+    <section class="blog" id="blog">
+      <div class="section-container blogs-container">
+        <h2 class="heading">
+          <span>T</span>
+          <span>R</span>
+          <span>A</span>
+          <span>V</span>
+          <span>E</span>
+          <span>L</span>
+          <span class="space"></span>
+          <span>B</span>
+          <span>L</span>
+          <span>O</span>
+          <span>G</span>
+          <span>S</span>
+        </h2>
+        <p class="section-subheader">
+          Explore the world through captivating stories, travel tips, and hidden
+          gems that inspire your next adventure!
+        </p>
+        <div class="blogs-grid">
+          <div class="blogs-card">
+            <img src="images/blog1.jpg" />
+            <div class="blogs-content">
+              <h4>must have items in your luggage!!</h4>
+            </div>
+              <div class="blogs-footer">
+                <p>18 oct 2023</p>
+                <span>
+                <i class="fa-solid fa-share-nodes"></i>               
+               </span>
+            </div>
+          </div>
+          <div class="blogs-card">
+            <img src="images/blog2.jpg" />
+            <div class="blogs-content">
+              <h4>how can you reduce the use of plastic in your trip</h4>
+            </div>
+              <div class="blogs-footer">
+                <p>29 nov 2023</p>
+                <span>
+                <i class="fa-solid fa-share-nodes"></i>                
+                </span>
+            </div>
+          </div>
+          <div class="blogs-card">
+            <img src="images/blog3.jpg" />
+            <div class="blogs-content">
+              <h4>12 travel hacks you need to know!!</h4>
+            </div>
+            <div class="blogs-footer">
+              <p>09 May 2024</p>
+              <span>
+                <i class="fa-solid fa-share-nodes"></i>              
+              </span>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="blogs-btn">
+          <button class="btn">
+            <p>View more journals <i class="fa fa-arrow-right"></i></p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <hr class="dashed">
+
+    <!-- gallery -->
+     <section class="gallery" id='gallery'
+     >
+     <div class="gallery-container">
+      <h2 class="section-header">~GALLERY~</h2>
+      <p class="section-subheader">Explore the most beautiful places in the world</p>
+     </div>
+     <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="images/gallery1.jpg" alt="">
+        <div class="gallery-content">
+          <h4>Athens</h4>
+          <p>Greece</p>
+        </div>
+      </div>
+        <div class="gallery-card">
+          <img src="images/gallery2.jpg" alt="">
+          <div class="gallery-content">
+            <h4>Taj Mahal</h4>
+            <p>India</p>
+          </div>
+        </div>
+
+          <div class="gallery-card">
+            <img src="images/gallery3.jpg" alt="">
+            <div class="gallery-content">
+              <h4>Switzerland</h4>
+              <p>Europe</p>
+            </div>
+          </div>
+
+            <div class="gallery-card">
+              <img src="images/gallery4.jpg" alt="">
+              <div class="gallery-content">
+                <h4>Maldives</h4>
+                <p>South Asia</p>
+              </div>
+            </div>
+
+              <div class="gallery-card">
+                <img src="images/gallery5.jpg" alt="">
+                <div class="gallery-content">
+                  <h4>Rome</h4>
+                  <p>Italy</p>
+                </div>
+              </div>
+
+      </div>
+      <div class="gallery-btn">
+        <button class="btn">
+          <p>See more <i class="fa fa-arrow-right"></i></p>
+        </button>
+      </div>
+     </div>
+    </section>
+
+  <!-- contact -->
+   <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-grid">
+        <h5>
+        Travel Nest
+        </h5>
+        <div class="contact-card">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Call us</h4>
+          <p>+91 9876543210</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa-regular fa-envelope"></i>
+          <p>travelnest@org.in</p>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- footer -->
+   <section class="footer">
+    <div class="footer-container">
+      <div class="footer-socials">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <p>Traveling opens your heart and mind to new cultures, traditions, and perspectives. Immerse yourself in local customs, try new cuisines, and forge connections that transcend borders, enriching your life in ways you never imagined.</p>
+      <ul class="footer-nav">
+        <li class="footer-link"><a href="#home">Home</a></li>
+        <li class="footer-link"><a href="#about">About us</a></li>
+        <li class="footer-link"><a href="#book">Book</a></li>
+        <li class="footer-link"><a href="#destination">Destination</a></li>
+        <li class="footer-link"><a href="#blog">Blog</a></li>
+        <li class="footer-link"><a href="#gallery">Gallery</a></li>
+        <li class="footer-link"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bar">
+      Copyright <i class="fa-regular fa-copyright"></i> 2024 Travel Nest. all rights reserved.
+    </div>
+   </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
